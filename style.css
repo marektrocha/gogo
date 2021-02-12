@@ -1,0 +1,285 @@
+/*
+Theme Name: GOGOmedia Software House
+Author: Marek Trocha
+Version: 1.0
+Date: 10.02.2021
+*/
+
+@font-face {
+  font-family: Rubik;
+  src: url(http://trocha.net.pl/gogomedia/wordpress/wp-content/themes/gogomedia/fonts/static/Rubik-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #215398;
+  --lightblue: #F1F6FC;
+  --white: #FFFFFF;
+  --blackText: #2D3236;
+  --grayText: #808080;
+  --magenta: #FF3859;
+  --blueStandard: #28A9E0;
+}
+
+html, body {
+  background-color: #DDE7F4;
+  font-family: Rubik;
+  color: #C4C4C4;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  height: 100%;
+  max-width: 1920px;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h4 {  /* body-big */
+  font-size: 20px;
+  line-height: 32px;
+}
+
+h5 {  /* body */
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--grayText);
+}
+
+.top {
+  width: 1920px;
+  height: 84px;
+  background-color: white;
+}
+
+.content1 {
+  width: 1920px;
+  height: 466px;
+  background-color: var(--blue);
+  text-align: center;
+  padding: 49px 0px 5px 0px;
+  color: white;
+}
+
+.content2 {
+  width: 1920px;
+  min-height: 526px;
+  background-color: var(--lightblue);
+  text-align: center;
+  padding: 49px 0px 5px 0px;
+  color: var(--blackText);
+}
+
+.logo {
+  top: 23px;
+}
+
+.dot {
+  position: absolute;
+  background-color: var(--magenta);
+  box-shadow: 0px 4px 4px rgba(255, 56, 89, 0.2);
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  top: 535px;
+  left: 947px;
+}
+
+.box-white {
+  background-color: white;
+  width: 332px;
+  height: 228px;
+  margin: 10px;
+  float: left;
+  padding: 36px 27px 36px 27px;
+  color: var(--body);
+  text-align: center;
+}
+
+.box-white h3 {
+  color: var(--blackText);
+}
+
+.box-white h5 {
+  color: var(--grayText);
+}
+
+.boxes {
+	position:relative;
+	margin:0 auto;
+	top:12px;
+	left:0px;
+	width:1176px;
+	height:228px;
+	overflow:hidden;
+	visibility:hidden;
+}
+
+.box {
+	cursor:default;
+	position:relative;
+	top:0px;
+	left:70px;
+	width:1036px;
+	height:228px;
+	overflow:hidden;
+}
+
+.prevNext {
+	position:absolute;
+	cursor:pointer;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	border-radius: 50%;
+	top:90px;
+  padding-top:12px;
+  font-size:40px;
+  color: var(--blueStandard);
+}
+
+.prevNext:hover {
+	background-color: rgba(255, 255,255, 0.05);
+}
+
+@media (max-width: 1999.98px) {
+
+  .top {
+    width: 1344px;
+    height: 84px;
+    background-color: white;
+  }
+  
+  .content1 {
+    width: 1344px;
+    height: 396px;
+    background-color: var(--blue);
+    text-align: center;
+    padding: 34px 0px 5px 0px;
+    color: white;
+  }
+  
+  .content2 {
+    width: 1344px;
+    min-height: 447px;
+    background-color: var(--lightblue);
+    text-align: center;
+    padding: 34px 0px 5px 0px;
+    color: var(--blackText);
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  h2 {
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  h3 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  h4 {  /* body-big */
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  h5 {  /* body */
+    font-size: 10px;
+    line-height: 17px;
+    color: var(--grayText);
+  }
+
+  .dot {
+    position: absolute;
+    background-color: var(--magenta);
+    box-shadow: 0px 4px 4px rgba(255, 56, 89, 0.2);
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    top: 463px;
+    left: 656px;
+  }
+  
+}
+
+@media (max-width: 1024px) {
+
+  .center {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5%;
+    transform: translate(0%, 0%);
+  }
+
+  .top {
+    width: 95%;
+    height: 84px;
+    background-color: white;
+  }
+  
+  .content1 {
+    width: 95%;
+    height: 466px;
+    background-color: var(--blue);
+    text-align: center;
+    padding: 49px 0px 5px 0px;
+    color: white;
+  }
+  
+  .content2 {
+    width:95%;
+    height:auto;
+    background-color: var(--lightblue);
+    text-align: center;
+    padding: 49px 0px 5px 0px;
+    color: var(--blackText);
+  }
+
+  .boxes {
+    position:relative;
+    margin:0 auto;
+    left:0px;
+    width:100%;
+    overflow:hidden;
+    visibility:hidden;
+  }
+  
+  .box {
+    cursor:default;
+    position:relative;
+    top:0px;
+    left:0px;
+    width:332px;
+    overflow:hidden;
+  }
+
+  .dot {
+    display: none;
+  }
+
+}
